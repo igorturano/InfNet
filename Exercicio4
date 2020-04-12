@@ -1,0 +1,21 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira as notas bimestrais do aluno:");
+            double nota1, nota2, nota3, nota4, media;
+                
+            nota1 = double.Parse(Console.ReadLine());
+            nota2 = double.Parse(Console.ReadLine());
+            nota3 = double.Parse(Console.ReadLine());
+            nota4 = double.Parse(Console.ReadLine());
+            media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            Console.WriteLine("A média do aluno neste ano foi: " + media);
+        }
+    }
+}

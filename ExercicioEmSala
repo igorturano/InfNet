@@ -1,0 +1,23 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) 
+  {
+
+  double nota = double.Parse(Console.ReadLine());
+
+  if (nota > 10)
+    Console.WriteLine("Essa nota NÃO existe.");
+  else if (nota == 0)
+    Console.WriteLine("Que Vergonha!");
+  else if (nota < 5)
+    Console.WriteLine("Precisa estudar muito mais!");
+  else if (nota >= 5 && nota < 8)
+    Console.WriteLine("Tem que estudar mais...");
+  else if (nota > 8 && nota < 10)
+    Console.WriteLine("Falta pouco!");
+  else
+    Console.WriteLine("Parabéns!");
+
+  }
+}

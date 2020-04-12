@@ -1,0 +1,27 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Console.WriteLine("Insira o valor do Raio de um círculo para saber sua área:");
+            double raio, area;
+
+            raio = double.Parse(Console.ReadLine());
+            area = Math.PI * Math.Pow(raio, 2);
+
+            Console.WriteLine("O valor da área do círculo é aproximadamente: " + area.ToString("F2") + " centímetros");
+
+
+
+            /* Área do Círculo = pi * Raio²;
+               Diametro = 2 * R
+               Circunferência = 2 * R * pi; */
+
+        }
+    }
+}

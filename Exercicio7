@@ -1,0 +1,27 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Console.WriteLine("Insira o valor de um dos lados do quadrado:");
+            double lado, area, dobro;
+
+            lado = double.Parse(Console.ReadLine());
+            area = Math.Pow(lado, 2);
+            dobro = area * 2;
+            Console.WriteLine("O dobro do valor da área do quadrado é: " + dobro.ToString("F2"));
+
+
+
+            /* Área do Quadrado = b * h;
+               ou A = L * L;
+               ou A = L²;             */
+
+        }
+    }
+}

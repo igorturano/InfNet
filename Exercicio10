@@ -1,0 +1,19 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double fahreheint, celsius;
+
+            Console.WriteLine("Insira o valor em celsius");
+            celsius = double.Parse(Console.ReadLine());
+            fahreheint = (celsius * 9 / 5) + 32;
+
+            Console.WriteLine("O valor em fahreheint será: " + fahreheint.ToString("F2"));
+
+        }
+    }
+}

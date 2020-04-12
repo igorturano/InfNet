@@ -1,0 +1,14 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira um número:");
+            double numero = double.Parse(Console.ReadLine());
+            Console.WriteLine("O número apresentado é: " + numero);
+        }
+    }
+}

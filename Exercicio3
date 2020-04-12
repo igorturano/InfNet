@@ -1,0 +1,18 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira dois números para sua soma:");
+            double num1, num2, soma;
+                
+            num1 = double.Parse(Console.ReadLine());
+            num2 = double.Parse(Console.ReadLine());
+            soma = num1 + num2;
+            Console.WriteLine("A soma dos números é: " + soma);
+        }
+    }
+}

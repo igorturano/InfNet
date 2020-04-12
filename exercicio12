@@ -1,0 +1,21 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58
+
+            Console.WriteLine("Insira sua altura e descubra seu peso ideal:");
+            double altura, pesoIdeal;
+            altura = double.Parse(Console.ReadLine());
+            pesoIdeal = (72.7 * altura) - 58;
+
+            Console.WriteLine("Seu peso ideal é: " + pesoIdeal.ToString("F2"));
+
+
+        }
+    }
+}

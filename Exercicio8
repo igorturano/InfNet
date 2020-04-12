@@ -1,0 +1,20 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double quantoGanha, horas, valorMensal;
+
+            Console.WriteLine("Quanto você ganha por hora?");
+            quantoGanha = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantas horas você trabalha no mês?");
+            horas = double.Parse(Console.ReadLine());
+            valorMensal = quantoGanha * horas;
+            Console.WriteLine("Num mês trabalhado você gera: " + valorMensal.ToString("F2"));
+
+        }
+    }
+}

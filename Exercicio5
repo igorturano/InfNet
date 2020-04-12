@@ -1,0 +1,25 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Converta metros para centímetros:");
+            double metro, centimetro;
+
+            metro = double.Parse(Console.ReadLine());
+            centimetro = metro * 100;
+
+
+            if (metro < 1) 
+                Console.WriteLine("Você inseriu um valor inválido");
+            else if (metro > 1)
+                Console.WriteLine(metro + " metros equivalem a " + centimetro + " centímetros");
+            else
+                Console.WriteLine(metro + " metro equivalem a " + centimetro + " centímetros");
+
+        }
+    }
+}

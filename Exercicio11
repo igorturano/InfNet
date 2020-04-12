@@ -1,0 +1,28 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int inteiro1, inteiro2, a1, a2, a3;
+            double real, b, c;
+
+            Console.WriteLine("Insira dois valores inteiros e um valor real em sequência:");
+            inteiro1 = int.Parse(Console.ReadLine());
+            inteiro2 = int.Parse(Console.ReadLine());
+            real = double.Parse(Console.ReadLine());
+            a1 = inteiro1 * 2;
+            a2 = inteiro2 / 2;
+            a3 = a1 * a2;
+            b = (inteiro1 * 3) + real;
+            c = Math.Pow(real, 3);
+
+            Console.WriteLine(a3.ToString("F2"));
+            Console.WriteLine(b.ToString("F2"));
+            Console.WriteLine(c.ToString("F2"));
+
+        }
+    }
+}

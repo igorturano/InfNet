@@ -1,0 +1,27 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* 1L de tinta = 3 m²
+             * Lata de tinta = 18L = R$ 80,00 // uma lata pinta 54m² */
+
+            int area, lata, preco;
+
+                Console.WriteLine("Qual tamanho da área em m² que será pintada?");
+            area = int.Parse(Console.ReadLine());
+            lata = area / 54;
+            preco = lata * 80;
+
+            if (area > 54)
+                Console.WriteLine("Você precisará comprar " + lata.ToString("F0") + " latas para pode pintar a área, isso te custará R$ " + preco.ToString("F2"));
+            else
+                Console.WriteLine("Você não usará mais do que uma lata.");
+
+
+        }
+    }
+}

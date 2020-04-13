@@ -1,0 +1,26 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double peso, excesso, multa;
+            Console.WriteLine("Insira o valor do peso da pesca hoje:");
+            peso = double.Parse(Console.ReadLine());
+
+            if (peso > 50)
+            {
+                excesso = peso - 50;
+                multa = excesso * 4;
+                Console.WriteLine("Sua pesca excedeu o limite em " + excesso.ToString("F2") + " kgs. Portanto você deverá pagar R$ " + multa.ToString("F2") + " de multa");
+            }
+            else
+                Console.WriteLine("Você não excedeu o peso estabelecido pelo governo hoje");
+
+
+
+        }
+    }
+}

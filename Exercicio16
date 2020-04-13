@@ -19,7 +19,7 @@ namespace InfNet
             if (area > 54)
                 Console.WriteLine("Você precisará comprar " + lata.ToString("F0") + " latas para pode pintar a área, isso te custará R$ " + preco.ToString("F2"));
             else
-                Console.WriteLine("Você não usará mais do que uma lata.");
+                Console.WriteLine("Você não usará mais do que uma lata de tinta.");
 
 
         }

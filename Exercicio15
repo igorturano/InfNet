@@ -21,7 +21,7 @@ namespace InfNet
             Console.WriteLine("Seu salário bruto é " + salarioBruto);
             Console.WriteLine("Seu desconto de IR foi de: R$ " + ir);
             Console.WriteLine("Seu desconto de INSS foi de: R$ " + inss);
-            Console.WriteLine("Seu desconto sindical foi de R$: " + sindicato);
+            Console.WriteLine("Seu desconto sindical foi de: R$ " + sindicato);
             Console.WriteLine("Seu salário líquido é: R$" + salarioLiquido);
 
 

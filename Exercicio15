@@ -1,0 +1,32 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double ganhaHora, horaMes, inss, ir, sindicato, salarioLiquido, salarioBruto;
+            Console.WriteLine("Quanto você ganha por hora?");
+            ganhaHora = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantas horas você trabalhou no mês?");
+            horaMes = double.Parse(Console.ReadLine());
+
+            salarioBruto = ganhaHora * horaMes;
+            ir = salarioBruto * 0.11;
+            inss = salarioBruto * 0.08;
+            sindicato = salarioBruto * 0.05;
+            salarioLiquido = salarioBruto - ir - inss - sindicato;
+
+            Console.WriteLine("Seu salário bruto é " + salarioBruto);
+            Console.WriteLine("Seu desconto de IR foi de: R$ " + ir);
+            Console.WriteLine("Seu desconto de INSS foi de: R$ " + inss);
+            Console.WriteLine("Seu desconto sindical foi de R$: " + sindicato);
+            Console.WriteLine("Seu salário líquido é: R$" + salarioLiquido);
+
+
+
+
+        }
+    }
+}

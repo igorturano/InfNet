@@ -18,15 +18,7 @@ namespace InfNet
             sindicato = salarioBruto * 0.05;
             salarioLiquido = salarioBruto - ir - inss - sindicato;
 
-            Console.WriteLine("Seu salário bruto é " + salarioBruto);
-            Console.WriteLine("Seu desconto de IR foi de: R$ " + ir);
-            Console.WriteLine("Seu desconto de INSS foi de: R$ " + inss);
-            Console.WriteLine("Seu desconto sindical foi de: R$ " + sindicato);
-            Console.WriteLine("Seu salário líquido é: R$" + salarioLiquido);
-
-
-
-
+            Console.WriteLine($"Salário bruto: {salarioBruto} \n IR: R$  {ir} \n Desconto INSS: R$ {inss} \n Desconto Sindical: R$  {sindicato} \nSalário Líquido: R$ {salarioLiquido}");
         }
     }
 }

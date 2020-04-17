@@ -1,0 +1,54 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double nota1, nota2, notaFinal;
+            Console.WriteLine("Insira as notas do primeiro e segundo bimestre respectivamente");
+            nota1 = double.Parse(Console.ReadLine());
+            nota2 = double.Parse(Console.ReadLine());
+            notaFinal = (nota1 + nota2) / 2;
+
+            if (notaFinal >= 9 && notaFinal <= 10)
+            {
+                Console.WriteLine("Nota primeiro bimestre: " + nota1);
+                Console.WriteLine("Nota segundo bimestre: " + nota2);
+                Console.WriteLine("Conceito: A");
+                Console.WriteLine("Aprovado");
+            }
+            else if (notaFinal >= 7.5 && notaFinal < 9.0)
+            {
+                Console.WriteLine("Nota primeiro bimestre: " + nota1);
+                Console.WriteLine("Nota segundo bimestre: " + nota2);
+                Console.WriteLine("Conceito: B");
+                Console.WriteLine("Aprovado");
+            }
+            else if (notaFinal >= 6 && notaFinal < 7.5)
+            {
+                Console.WriteLine("Nota primeiro bimestre: " + nota1);
+                Console.WriteLine("Nota segundo bimestre: " + nota2);
+                Console.WriteLine("Conceito: C");
+                Console.WriteLine("Aprovado");
+            }
+            else if (notaFinal >= 4.0 && notaFinal < 6.0)
+            {
+                Console.WriteLine("Nota primeiro bimestre: " + nota1);
+                Console.WriteLine("Nota segundo bimestre: " + nota2);
+                Console.WriteLine("Conceito: D");
+                Console.WriteLine("Reprovado");
+            }
+            else if (notaFinal >= 0.0 && notaFinal < 4.0)
+            {
+                Console.WriteLine("Nota primeiro bimestre: " + nota1);
+                Console.WriteLine("Nota segundo bimestre: " + nota2);
+                Console.WriteLine("Conceito: E");
+                Console.WriteLine("Reprovado");
+            }
+            else
+                Console.WriteLine("Valor inválido");
+        }
+    }
+}

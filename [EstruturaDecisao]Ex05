@@ -1,0 +1,25 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double nota1, nota2, resultado;
+            Console.WriteLine("Insira a primeira nota do aluno:");
+            nota1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira a segunda nota do aluno:");
+            nota2 = double.Parse(Console.ReadLine());
+            resultado = (nota1 + nota2) / 2;
+            if (resultado >= 7 && resultado < 10)
+                Console.WriteLine("Aprovado");
+            else if (resultado < 7 && resultado > 0)
+                Console.WriteLine("Reprovado");
+            else if (resultado == 10)
+                Console.WriteLine("Aprovado com distinção!");
+            else
+                Console.WriteLine("Valor inválido, por favor, reinicie o programa.");
+        }
+    }
+}

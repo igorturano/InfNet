@@ -42,3 +42,38 @@ namespace InfNet
         }
     }
 }
+
+
+******************* VERSÃO OTIMIZADA *************************
+
+
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira o salário do colaborador para saber o reajuste:");
+            double salario = double.Parse(Console.ReadLine());
+            int reajuste = 1;
+
+            if (salario <= 280) 
+                reajuste = 20;
+            else if (salario > 280 && salario <= 700)
+                reajuste = 15;
+            else if (salario > 700 && salario <= 1500)
+                reajuste = 10;
+            else if (salario > 1500) 
+               reajuste = 5;
+            else    
+                Console.WriteLine("Valor inválido, por favor, reinicie o programa");
+
+            Console.WriteLine("O salário atual do colaborador é: " + salario.ToString("C"));
+            Console.WriteLine("O percentual do reajuste é de " + reajuste + "%");
+            Console.WriteLine("O valor do reajuste será: " + (salario * reajuste / 100).ToString("C"));
+            Console.WriteLine("O salário do colaborador passará a ser " + ((salario * reajuste / 100) + salario).ToString("C"));
+        }
+    }
+}

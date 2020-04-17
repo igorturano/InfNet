@@ -1,0 +1,19 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira dois números e descubra o maior entre eles: ");
+            double primeiro, segundo;
+            primeiro = double.Parse(Console.ReadLine());
+            segundo = double.Parse(Console.ReadLine());
+            if (primeiro > segundo)
+                Console.WriteLine("O primeiro número é o maior: " + primeiro);
+            else
+                Console.WriteLine("O segundo número é o maior: " + segundo);
+        }
+    }
+}

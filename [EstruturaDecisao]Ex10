@@ -1,0 +1,21 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite seu turno de trabalho sendo M-matutino, V-Vespertino ou N- Noturno: ");
+            string turno = Console.ReadLine();
+            if (turno == "M".ToLower())
+                Console.WriteLine("Bom dia!");
+            else if (turno == "V".ToLower())
+                Console.WriteLine("Boa tarde!");
+            else if (turno == "N".ToLower())
+                Console.WriteLine("Boa noite!");
+            else
+                Console.WriteLine("Valor Inválido!");
+        }
+    }
+}

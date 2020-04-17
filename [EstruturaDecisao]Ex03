@@ -1,0 +1,19 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira o gênero F ou M");
+            string genero = Console.ReadLine();
+            if (genero == "F".ToLower())
+                Console.WriteLine("F - Feminino");
+            else if (genero == "M".ToLower())
+                Console.WriteLine("M - Masculino");
+            else
+                Console.WriteLine("Sexo Inválido");
+        }
+    }
+}

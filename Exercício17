@@ -1,0 +1,25 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double area, lata, galao, metros, resultadoLata, resultadoGalao;
+            Console.WriteLine("Indique o tamanho da área em m²:");
+            area = double.Parse(Console.ReadLine());
+            metros = 6;
+            lata = 18 * metros;
+            galao = 3.6 * metros;
+            resultadoLata = area / lata;
+            resultadoGalao = resultadoLata / galao;
+            if (area > lata) {
+                Console.WriteLine("Você precisará comprar " + Math.Round(resultadoLata).ToString("F0") +  " Lata(s) de tinta(s)");
+                if (area % lata > galao)
+                    Console.WriteLine("Além disso, também recomendamos que compre " + Math.Round(resultadoGalao).ToString("F0") + " galão(es) de tinta(s)");
+            }
+                
+        }
+    }
+}

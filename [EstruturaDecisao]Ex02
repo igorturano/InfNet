@@ -1,0 +1,20 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Insira um valor e descubra se ele é positivo ou negativo: ");
+            double valor;
+            valor = double.Parse(Console.ReadLine());
+            if (valor > 0)
+                Console.WriteLine("Este número é positivo");
+            else if (valor < 0)
+                Console.WriteLine("Este número é negativo");
+            else
+                Console.WriteLine("O valor inserido é nulo");
+        }
+    }
+}

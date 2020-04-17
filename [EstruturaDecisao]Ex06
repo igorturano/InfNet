@@ -1,0 +1,43 @@
+// Esse aqui eu fiz com vetores pra praticar, tá um pouco complexo. Então fiz outro embaixo mais simples:
+
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1, valor2, valor3, resultado;
+            string[] vet = Console.ReadLine().Split(' ');
+            Console.WriteLine("Escreva três números com um espaço entre eles e descubra o maior valor:");
+            valor1 = double.Parse(vet[0]);
+            valor2 = double.Parse(vet[1]);
+            valor3 = double.Parse(vet[2]);
+            resultado = Math.MaxMagnitude(Math.MaxMagnitude(valor1, valor2), valor3);
+            Console.WriteLine("O maior valor dentre os 3 números é: " + resultado);
+        }
+    }
+}
+
+
+// Versão simplificada:
+
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1, valor2, valor3, resultado;
+            Console.WriteLine("Escreva três números com um espaço entre eles e descubra o maior valor:");
+            valor1 = double.Parse(Console.ReadLine());
+            valor2 = double.Parse(Console.ReadLine());
+            valor3 = double.Parse(Console.ReadLine());
+            resultado = Math.MaxMagnitude(Math.MaxMagnitude(valor1, valor2), valor3);
+            Console.WriteLine("O maior valor dentre os 3 números é: " + resultado);
+        }
+    }
+}

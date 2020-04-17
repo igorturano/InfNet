@@ -1,0 +1,20 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1, valor2, valor3, menorValor, maiorValor;
+            Console.WriteLine("Escreva três números e descubra o menor e o maior valor entre eles:");
+            valor1 = double.Parse(Console.ReadLine());
+            valor2 = double.Parse(Console.ReadLine());
+            valor3 = double.Parse(Console.ReadLine());
+            menorValor = Math.MinMagnitude(Math.MinMagnitude(valor1, valor2), valor3);
+            maiorValor = Math.MaxMagnitude(Math.MaxMagnitude(valor1, valor2), valor3);
+            Console.WriteLine("O menor valor é: " + menorValor);
+            Console.WriteLine("O maior valor é: " + maiorValor);
+        }
+    }
+}

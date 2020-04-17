@@ -1,0 +1,18 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double peso, velocidade, resultado;
+            Console.WriteLine("Qual peso do arquivo em MB?");
+            peso = double.Parse(Console.ReadLine());
+            Console.WriteLine("Indique a velocidade do link em MBps");
+            velocidade = double.Parse(Console.ReadLine());
+            resultado = (peso / velocidade);
+            Console.WriteLine("O download será feito em aproximadamente " + resultado.ToString("F0") + " minutos");
+        }
+    }
+}

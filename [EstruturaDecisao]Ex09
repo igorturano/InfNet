@@ -1,0 +1,37 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1, valor2, valor3;
+            Console.WriteLine("Insira 3 valores e descubra sua ordem decrescente:");
+            valor1 = double.Parse(Console.ReadLine());
+            valor2 = double.Parse(Console.ReadLine());
+            valor3 = double.Parse(Console.ReadLine());
+           if (valor1 < valor2 && valor1 < valor3)
+            {
+                if (valor2 < valor3)
+                    Console.WriteLine(valor1 + " " + valor2 + " " + valor3);
+                else
+                    Console.WriteLine(valor1 + " " + valor3 + " " + valor2);
+            }
+           if (valor2 < valor1 && valor2 < valor3)
+           {
+                if (valor3 < valor1)
+                    Console.WriteLine(valor2 + " " + valor3 + " " + valor1);
+                else
+                    Console.WriteLine(valor2 + " " + valor1 + " " + valor3);
+            }          
+           if (valor3 < valor1 && valor3 < valor2)
+            {
+                if (valor1 < valor2)
+                    Console.WriteLine(valor3 + " " + valor1 + " " + valor2);
+                if (valor2 < valor1)
+                    Console.WriteLine(valor3 + " " + valor2 + valor1);
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string letra;
+            letra = Console.ReadLine();
+            Console.WriteLine("Insira uma letra e descubra se ela é uma vogal ou consoante:");
+            if (letra == "a".ToUpper() || letra == "e".ToUpper() || letra == "i".ToUpper() || letra == "o".ToUpper() || letra == "u".ToUpper())
+                Console.WriteLine("A letra digitada é uma vogal.");
+            else
+                Console.WriteLine("A letra digitada é uma consoante.");
+        }
+    }
+}

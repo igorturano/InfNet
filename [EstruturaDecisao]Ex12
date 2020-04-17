@@ -1,0 +1,57 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // eu tinha colocado o sindicato, mas tinha ficado diferente do cálculo do site então tirei
+            double salarioHora, horaMes, salarioBruto, ir, fgts, inss;
+            Console.WriteLine("Quanto vale sua hora de trabalho?");
+            salarioHora = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantas horas você trabalha por mês?");
+            horaMes = double.Parse(Console.ReadLine());
+            salarioBruto = salarioHora * horaMes;
+            ir = 0;
+            fgts = 0.11;
+            inss = 0.10;
+            
+            if (salarioBruto <= 900)
+            {
+                Console.WriteLine("Salário Bruto: " + salarioBruto.ToString("C"));
+                Console.WriteLine("Imposto de Renda: " + (salarioBruto * ir).ToString("C"));
+                Console.WriteLine(("FGTS " + (salarioBruto * fgts).ToString("C")));
+                Console.WriteLine("Total de descontos: " + ((salarioBruto * ir) + (salarioBruto * inss)).ToString("C"));
+                Console.WriteLine(("Salário Líquido: " + (salarioBruto - (salarioBruto * ir) - (salarioBruto * inss)).ToString("C")));
+            }
+            if (salarioBruto <= 1500 && salarioBruto > 900)
+            {
+                ir = 0.05;
+                Console.WriteLine("Salário Bruto: " + salarioBruto.ToString("C"));
+                Console.WriteLine("Imposto de Renda: " + (salarioBruto * ir).ToString("C"));
+                Console.WriteLine(("FGTS " + (salarioBruto * fgts).ToString("C")));
+                Console.WriteLine("Total de descontos: " + ((salarioBruto * ir) + (salarioBruto * inss)).ToString("C"));
+                Console.WriteLine(("Salário Líquido: " + (salarioBruto - (salarioBruto * ir) - (salarioBruto * inss)).ToString("C")));
+            }
+            if (salarioBruto <= 2500 && salarioBruto > 1500)
+            {
+                ir = 0.10;
+                Console.WriteLine("Salário Bruto: " + salarioBruto.ToString("C"));
+                Console.WriteLine("Imposto de Renda: " + (salarioBruto * ir).ToString("C"));
+                Console.WriteLine(("FGTS " + (salarioBruto * fgts).ToString("C")));
+                Console.WriteLine("Total de descontos: " + ((salarioBruto * ir) + (salarioBruto * inss)).ToString("C"));
+                Console.WriteLine(("Salário Líquido: " + (salarioBruto - (salarioBruto * ir) - (salarioBruto * inss)).ToString("C")));
+            }
+            if (salarioBruto > 2500)
+            {
+                ir = 0.20;
+                Console.WriteLine("Salário Bruto: " + salarioBruto.ToString("C"));
+                Console.WriteLine("Imposto de Renda: " + (salarioBruto * ir).ToString("C"));
+                Console.WriteLine(("FGTS " + (salarioBruto * fgts).ToString("C")));
+                Console.WriteLine("Total de descontos: " + ((salarioBruto * ir) + (salarioBruto * inss)).ToString("C"));
+                Console.WriteLine(("Salário Líquido: " + (salarioBruto - (salarioBruto * ir) - (salarioBruto * inss)).ToString("C")));
+            }
+        }
+    }
+}

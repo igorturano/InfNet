@@ -1,0 +1,18 @@
+using System;
+
+namespace InfNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1, valor2, valor3, menorValor;
+            Console.WriteLine("Informe o valor dos 3 produtos que deseja comprar:");
+            valor1 = double.Parse(Console.ReadLine());
+            valor2 = double.Parse(Console.ReadLine());
+            valor3 = double.Parse(Console.ReadLine());
+            menorValor = Math.MinMagnitude(Math.MinMagnitude(valor1, valor2), valor3);
+            Console.WriteLine("Compre o que possui esse valor: " + menorValor);
+        }
+    }
+}

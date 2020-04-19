@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o ano e descubra se é bissexto:");
+            int ano;
+            ano = int.Parse(Console.ReadLine());
+            if (ano % 4 == 0)
+            {
+                if (ano % 100 == 0) 
+                    if (ano % 400 == 0)
+                        Console.WriteLine("O ano é bissexto");
+            }
+            else
+                Console.WriteLine("Não é um ano bissexto");
+        }
+    }
+}

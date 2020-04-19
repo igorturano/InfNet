@@ -1,0 +1,23 @@
+using System;
+using System.Linq;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite a data, primeiro o dia, seguido do mês e ano no seguinte formato: DD/MM/AAAA:");
+            double dia, mes, ano;
+            dia = double.Parse(Console.ReadLine());
+            mes = double.Parse(Console.ReadLine());
+            ano = double.Parse(Console.ReadLine());
+
+            if (dia < 1 && dia > 31)
+                Console.WriteLine("Valor inválido");
+            else if (mes < 1 && mes > 12)
+                Console.WriteLine("Valor inválido");
+            if (ano < 0)
+                Console.WriteLine("Valor inválido");
+        }
+    }
+}

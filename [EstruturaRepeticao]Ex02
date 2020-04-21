@@ -1,0 +1,24 @@
+using System;
+using System.Linq;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args) {
+
+            string senha, usuario;
+            Console.WriteLine("Digite seu login:");
+            usuario = Console.ReadLine();
+            Console.WriteLine("Digite sua senha:");
+            senha = Console.ReadLine();
+            while (usuario == senha)
+            {
+                Console.WriteLine("Login não pode ser igual a senha, tente novamente: ");
+                Console.WriteLine("Digite seu login:");
+                usuario = Console.ReadLine();
+                Console.WriteLine("Digite sua senha:");
+                senha = Console.ReadLine();
+            }
+        }
+    }
+}

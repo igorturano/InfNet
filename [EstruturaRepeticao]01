@@ -1,0 +1,16 @@
+using System;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nota = int.Parse(Console.ReadLine());
+            while (nota < 0 || nota > 10)
+            {
+                Console.WriteLine("valor inválido");
+                nota = int.Parse(Console.ReadLine());
+            }
+        }
+    }
+}

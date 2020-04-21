@@ -1,0 +1,52 @@
+using System;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome, sexo, estadoCivil;
+            double salario, idade;
+
+            Console.WriteLine("Insira o nome:");
+            nome = Console.ReadLine();
+
+            while (nome.Length < 3)
+            {
+                Console.WriteLine("O nome precisa ter pelo menos 3 caracteres");
+                nome = Console.ReadLine();
+            }
+            Console.WriteLine("Insira sua idade:");
+            idade = double.Parse(Console.ReadLine());
+            while (idade < 1 || idade >= 150)
+            {
+                Console.WriteLine("Valor incorreto");
+                idade = double.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Insira seu salário");
+            salario = double.Parse(Console.ReadLine());
+            while (salario < 0)
+            {
+                Console.WriteLine("Valor incorreto");
+                salario = double.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Insira seu sexo:");
+            sexo = Console.ReadLine();
+            while (!(sexo == "f" || sexo == "m"))
+            {
+                Console.WriteLine("Valor incorreto(f ou m)");
+                sexo = Console.ReadLine();
+            }
+            Console.WriteLine("Insira seu Estado civil");
+            estadoCivil = Console.ReadLine();
+            while (!(estadoCivil != "s" || estadoCivil != "c" || estadoCivil != "v" || estadoCivil != "d"))
+            {
+                Console.WriteLine("Por favor, especifique o Estado Civil corretamento(s,c,v ou d)");
+                estadoCivil = Console.ReadLine();
+            }
+        }
+    }
+}
+                     
+    
+
